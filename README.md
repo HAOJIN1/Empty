@@ -16,6 +16,29 @@
 
 ## 跳转链接
 
+2023年3月13日14:37:37
+
+经过测试发现，在 vscode 中操作 ipynb 文件目录跳转时
+
+```
+[First](#First)
+	## First
+	## first
+```
+
+英文目录可正常跳转，而中文目录无法正常跳转，
+
+但是可使用
+
+```
+<a href="#目录一">目录一</a>
+	# 目录一
+<a href="#1.-目录一">目录一</a>
+	# 1. 目录一
+```
+
+跳转，该跳转兼容 vscode 的 ipynb 和 Jupyter notebook 的 ipynb，相对于为全文中文标题添加 html 锚点是一个更好的选择。
+
 
 
 > 在大部分常见 markdown 中，例如 `Obsidain、GitHub、 Jupyter` 中，`[](#)` 的跳转圆括号里面空格必须为 “-”，或者使用 `html` 标签跳转，而 Typora 可以兼容空格。
