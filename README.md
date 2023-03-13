@@ -39,6 +39,8 @@
 
 跳转，该跳转兼容 vscode 的 ipynb 和 Jupyter notebook 的 ipynb，相对于为全文中文标题添加 html 锚点是一个更好的选择。
 
+在 vscode 跳转使用 html 的 a 标签作为目录时，只能使用小写字母，并且不能使用半角标点的句号，空格需要短横线代替，特殊标点则无法使用。
+
 
 
 > 在大部分常见 markdown 中，例如 `Obsidain、GitHub、 Jupyter` 中，`[](#)` 的跳转圆括号里面空格必须为 “-”，或者使用 `html` 标签跳转，而 Typora 可以兼容空格。
